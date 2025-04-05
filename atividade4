@@ -1,0 +1,23 @@
+#include<stdio.h>
+    #include<math.h>
+    int main(int argc, char* argv[]){
+        int decisao, N;
+        
+        printf("\tASSISTENTE CINEFILO\n");
+    printf("Vamos entrar no universo cinematografico!\n");
+    printf("Ja sabe que estilo de filme gostaria de assistir hoje?\n 1:SIM!\n 2:NAO!\n");
+    scanf("%i", &decisao);
+if(decisao==1){
+    printf("Otimo, entao compartilhe comigo que estilo de filme veremos hoje!\n");
+    printf("1:terror\n 2:acao\n 3:romance\n 4:comedia");
+    scanf("%i",&N);
+ if(N==1){   
+ printf("terror e uma opcao assustadora e muito divertida, realmente e a opcao ideal para noites de cinema!\n");
+ printf("")
+}
+}
+if(decisao==2){
+printf("Com tantas alternativas e normal ficar indeciso! mas posso te dar uma ideia do modelo de filme ideal para hoje!");
+}
+
+}
