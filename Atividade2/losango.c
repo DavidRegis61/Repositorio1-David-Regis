@@ -5,7 +5,7 @@
 
         printf("\t AREA DO LOSANGULO \n");
 
-        float menor, maior, area;
+      +  float menor, maior, area;
     
         printf("Informe a diagonal maior do losangulo! \n");
         scanf("%f", &maior);
