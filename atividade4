@@ -1,10 +1,60 @@
 #include<stdio.h>
-#include<math.h>
-    int main(int argc, char* argv[])
-    {
-        
+    #include<math.h>
+    int main(int argc, char* argv[]){
+        int decisao, N;
         printf("\tASSISTENTE CINEFILO\n");
     printf("Vamos entrar no universo cinematografico!\n");
     printf("Ja sabe que estilo de filme gostaria de assistir hoje?\n 1:SIM!\n 2:NAO!\n");
-    return 0;
-    }
+    scanf("%i", &decisao);
+	if(decisao==1){
+    printf("Otimo, entao compartilhe comigo que estilo de filme veremos hoje!\n");
+    printf("1:terror\n 2:acao\n 3:romance\n 4:comedia\n");
+	int letra;
+    scanf("%i",&letra);
+	 if(letra==1){   
+ 	printf("Terror e uma opcao assustadora e muito divertida, realmente e a opcao ideal para noites de cinema!\n");
+ 	printf("O filme que posso recomendar e o Doce Vingança, um filme de terror que vai te deixar grudado na tela!\n");
+}
+	if(letra==2){
+    printf("Claro. Filmes de acao sao uma otima opcao para uma noite de tirar o folego! \n");
+    printf("O filme que posso recomendar e o Mad Max: Estrada da Furia, um filme de acao que vai te deixar grudado na tela!\n");
+}
+	if(letra==3){
+    printf("Bela escolha afinal uma noite a dois nao e a mesma coisa sem um bom filme de romance!\n");
+	printf("O filme que posso recomendar e o A Culpa e das Estrelas, um filme de romance que vai te deixar grudado na tela!\n");
+}
+	if(letra==4){
+    printf("Vamos alegrar a noite de cinema comedia com certeza e a melhor opcao para umas boas rizadas!\n");
+    printf("O filme que posso recomendar e o A Morte te da Parabens, um filme de comedia que vai te deixar grudado na tela!\n");
+}
+}
+	if(decisao==2){
+	int tensao; 
+	printf("Com tantas alternativas e normal ficar indeciso! mas posso te dar uma ideia do modelo de filme ideal para hoje!\n");
+	printf("primeiramentevamos decidir que tipo de filme voce quer ver hoje!\n 1 para filmes leves\n2 para filmes intensos\n");
+	scanf("%i",&tensao);
+	if(tensao==1){
+	int leve;
+	printf("Com certeza um filme mais descontraido e o melhor para relaxar e se divertir!\n"); 
+	printf("Posso recomendar 2 categorias de filmes ideais para aproveitar uma boa noite de cinema. Comedia ou romance!\nDigite 1 para comedia\n Digite 2 para romance\n");
+	scanf("%i",&leve);
+	if(leve==1){
+		printf("Uma boa comedia pode alegrar ate os piores dias, para se divertir e dar boas risadas e a opcao ideal!\n");
+		printf("A comedia ideal para hoje e O ditador, Um flme de comedia que vai te deixar grudado na tela\n");}
+	if(leve==2){printf("Claro, a escolha ideal para uma noite a 2!\n o filme que posso recomendar e o Águas Profundas,um filme de romance que vai te deixar grudado na tela!\n");
+}}
+	if(tensao==2){printf("Um filme mais intenso entrega grandes emocoes e com certeza sera uma grande aventura!\n");
+	printf("Posso recomendar 2 categorias de filmes ideais para se emocionar e ter uma noite de cinemas agitada. Terror ou acao\n");
+	int intenso;
+	printf("Digite 1 para Terror!\n Digite 2 para acao!\n");
+	scanf("%i",&intenso);
+	if(intenso==1){
+	printf("Terror, uma opcao assustadora, mas muito divertida\n O filme que posso recomendar e o Invocacão do Mal 3: A Ordem do Demônio, um filme de terror que vai te deixar grudado na tela!");	
+	}
+	if(intenso==2){
+		printf("Claro. Filmes de acao sao uma otima opcao para uma noite de tirar o folego! \n");
+    printf("O filme que posso recomendar e o Missão Resgate, um filme de acao que vai te deixar grudado na tela!\n");
+}
+}
+}
+}
