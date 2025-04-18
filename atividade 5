@@ -1,1 +1,66 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
 
+int main(int argc, char *argv[]) {
+    printf("\tNOTAS DOS ALUNOS!\n");
+    int x;
+
+    printf("Por favor, informe o numero de alunos da turma:\n");
+    scanf("%d", &x);
+
+    if (x <= 0) {
+        printf("Numero invalido!\n");
+        return 1;
+    }
+
+    float notas[x];
+    float soma = 0;
+
+    printf("Otimo! Agora digite as notas de cada aluno:\n");
+
+    for (int i = 0; i < x; i++) {
+        printf("Nota do aluno %d: ", i + 1);
+        scanf("%f", &notas[i]);
+        soma += notas[i];
+    }
+
+    float media = soma / x;
+    printf("\nMedia da turma: %.2f\n", media);
+
+    printf("\nAPROVADOS OU REPROVADOS:\n");
+    for (int i = 0; i < x; i++) {
+        if (notas[i] >= 6.0) {
+            printf("Aluno %d: %.2f - APROVADO\n", i + 1, notas[i]);
+        } else {
+            printf("Aluno %d: %.2f - REPROVADO\n", i + 1, notas[i]);
+        }
+    }
+
+    float maior = notas[0];
+    float menor = notas[0];
+
+    for (int i = 1; i < x; i++) {
+        if (notas[i] > maior) {
+            maior = notas[i];
+        }
+        if (notas[i] < menor) {
+            menor = notas[i];
+        }
+    }
+
+    printf("\nA maior nota e: %.2f\n", maior);
+    printf("A menor nota e: %.2f\n", menor);
+    int Consulta;
+    printf("\nDeseja consultar a nota de qual aluno? \n");
+        printf("Informe o numero do aluno (1 a %d): ", x);
+        scanf("%d", &Consulta);
+
+         if (Consulta >= 1 && Consulta <= x) {
+            printf("Nota do aluno %d: %.2f\n", Consulta, notas[Consulta - 1]);
+        } else {
+            printf("Numero invalido! Tente novamente.\n");
+        }
+
+    return 0;
+}
